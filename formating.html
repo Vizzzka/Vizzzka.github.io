@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block header %}
+<link rel="stylesheet" type="text/css" href="style/style_formating.css">
+{% endblock %}
+
+{% block main %}
+<h1>Formating text</h1>
+<div class="subtext">
+
+    HTML also defines special elements for defining text with a special meaning.
+
+    HTML uses elements like <code><xmp> <b> </xmp></code> and <code><xmp> <i> </xmp></code> for formatting output, like <bold>bold</bold>
+    or <italic>italic</italic> text.
+
+    Formatting elements were designed to display special types of text:
+</div>
+<ul class="list">
+    <li><code><xmp><b></b></xmp></code> - <b>Bold text</b> </li>
+    <li><code><xmp><strong></strong></xmp></code> - <strong>Important text</strong> </li>
+    <li><code><xmp><i></i></xmp></code> - <i>Italic text</i> </li>
+    <li><code><xmp><em></em></xmp></code> - <em>Emphasized text</em> </li>
+    <li><code><xmp><mark></mark></xmp></code> - <mark>Marked text</mark> </li>
+    <li><code><xmp><small></small></xmp></code> - <small>Small text</small> </li>
+    <li><code><xmp><del></del></xmp></code> - <del>Deleted text</del> </li>
+    <li><code><xmp><ins></ins></xmp></code> - <ins>Inserted text</ins> </li>
+    <li><code><xmp><sub></sub></xmp></code> - <sub>Subscript text</sub> </li>
+    <li><code><xmp><sup></sup></xmp></code> - <sup>Superscript text</sup> </li>
+</ul>
+
+<h1>Examples</h1>
+<div class="grid-container">
+    <div class="item"><h3>HTML <xmp><b></b></xmp></h3> The HTML b element defines bold text,
+        without any extra importance. <xmp><b>This text is bold</b></xmp> </div>
+    <div class="item"><h3>HTML <xmp><strong></strong></xmp></h3> The HTML <strong>strong</strong>
+        element defines strong text, with added semantic "strong" importance.
+        <xmp><strong>This text is strong</strong></xmp> </div>
+    <div class="item"><h3>HTML <xmp><i></i></xmp></h3> The HTML i element defines <i>italic</i> text,
+        without any extra importance. <xmp><b>This text is italic</b></xmp> </div>
+    <div class="item"><h3>HTML <xmp><em></em></xmp></h3> The HTML em element defines <em>emphasized</em> text,
+        wit any added semantic importance. <xmp><em>This text is emphasized </em></xmp> </div>
+
+    <div class="item"><h3>HTML <xmp><small></small></xmp></h3> The HTML small element defines
+        <small>smaller</small> text<xmp><small>This text is smaller</small></xmp> </div>
+    <div class="item"><h3>HTML <xmp><mark></mark></xmp></h3> The HTML mark element defines
+        <mark>marked/highlighted</mark> text<xmp><mark>This text is marked/highlighted</mark></xmp> </div>
+    <div class="item"><h3>HTML <xmp><del></del></xmp></h3> The HTML b element defines
+        <del>deleted/removed text</del> <xmp><del>This text is deleted/removed</del></xmp> </div>
+    <div class="item"><h3>HTML <xmp><ins></ins></xmp></h3> The HTML b element defines
+        <ins>inserted/added</ins> text <xmp><ins>This text is inserted/added</ins></xmp> </div>
+</div>
+{% endblock %}

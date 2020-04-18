@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block header %}
+<link rel="stylesheet" type="text/css" href="style/style_image.css">
+{% endblock %}
+
+{% block main %}
+<h1 style="margin-left: 15%; text-align: center; font-family: Arial, Helvetica, sans-serif;">Images in HTML</h1>
+<hr>
+<div class="text">Images can improve the design and the appearance of a web page.</div>
+<hr>
+<div class="block">
+<div class="images">
+    <img alt="" src="img/image1.jpg">
+    <img alt="" src="img/image2.jpg">
+    <img alt="" src="img/image3.jpg">
+</div>
+</div>
+
+
+<div class="text">
+    <h2> Example </h2>
+    <div class="code"><xmp><img src="img_girl.jpg" alt="Girl in a jacket"></xmp></div>
+    <div> <h2> HTML Images Syntax </h2>
+        In HTML, images are defined with the <xmp><img></xmp> tag. <br>
+        The <xmp><img></xmp> tag is empty, it contains attributes only, and does not have a closing tag.
+        The src attribute specifies the URL (web address) of the image <br>
+        The alt attribute provides an alternate text for an image, if the user for some reason cannot view
+        it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). <br>
+    </div>
+    <div class="note"><strong>Note</strong>: The alt attribute is required. A web page will not validate correctly
+        without it. </div>
+    <h2>HTML Image Maps</h2>
+    <div>The <xmp><map></map></xmp> tag defines an image-map. An image-map is an image with clickable areas.
+        Click on the computer, the phone, or the cup of coffee in the image below:</div>
+    <div style="margin-top: 20px;"><img src="img/map_example.jpg" alt=""></div>
+    <h2>Example</h2>
+    <div class="code"><xmp><img src="workplace.jpg" alt="Workplace" usemap="#workmap"></div>
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        </map></xmp></div>
+    <h2>Coordinates</h2>
+    <div>You must define some coordinates to be able to place the clickable area onto the image. <br>
+        The coordinates come in pairs, one for the x-axis and one for the y-axis. <br>
+        For example the coordinates 34, 44 is located 34 pixels from the left margin and 44 pixels from the top</div>
+</div>
+{% endblock %}

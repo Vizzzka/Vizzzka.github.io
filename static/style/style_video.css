@@ -1,0 +1,27 @@
+h2 {
+    margin-top:40px;
+
+}
+.text {
+    font-size: 120%;
+    margin-left: 20%;
+}
+.video {
+    width: 500px;
+    background-color: rgba(256, 256, 256, 0.3);
+    border-radius: 50px;
+    padding: 10px 10px 10px;
+    border: 0;
+    text-align: center;
+}
+
+xmp {
+    display: inline;
+}
+
+.code {
+    width: 700px;
+    margin-bottom: 20px;
+    background-color: rgba(51, 170, 51, .2);
+    border-radius: 20px;
+}

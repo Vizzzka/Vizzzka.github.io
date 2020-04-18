@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <script src="https://kit.fontawesome.com/979b9c8650.js" crossorigin="anonymous"></script>
+    <script src="nunjucks.js"></script>
+    {% block header %}
+    {% endblock %}
+    <title>HTML CSS tutorial</title>
+</head>
+<body>
+
+<div class="horizontal_navbar">
+    <div><i class="fas fa-home fa-3x"></i></div>
+    <div><a href="">Examples</a></div>
+    <div><a href="resources">Useful resources</a></div>
+    <div><a href="tips">Some tips</a></div>
+    <div><a href="author">Author</a></div>
+</div>
+
+<div>
+<ul class="vertical_navbar">
+    <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">HTML</li>
+    <li><a href="inputs_forms">Forms and input</a></li>
+    <li><a href="formating">Text format</a></li>
+    <li><a href="links">Links</a></li>
+    <li><a href="image">Image</a></li>
+    <li><a href="videohtml">Video</a></li>
+    <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">CSS</li>
+    <li><a href="grid">Grid</a></li>
+    <li><a href="flexbox">Flexbox</a></li>
+    <li><a href="box_model">Box Model</a></li>
+    <li><a href="dropdown">Dropdown</a></li>
+    <li><a href="colors">Colors</a></li>
+    <li><a href="tables">Tables</a></li>
+</ul>
+</div>
+{% block main %}
+{% endblock %}
+
+</body>
+
+<div class="footer">
+    <div class="social">
+    <i class="fab fa-twitter-square fa-3x" style="margin: 20px"></i>
+    <i class="fab fa-instagram-square fa-3x" style="margin: 20px"></i>
+    <i class="fab fa-facebook-square fa-3x" style="margin: 20px"></i>
+    <div>Copyright 2020</div>
+    </div>
+</div>
+
+</html>

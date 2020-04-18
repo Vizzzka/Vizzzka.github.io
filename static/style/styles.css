@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-image: url('/img/fone.png');
+}
+
+.horizontal_navbar {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: flex-end;
+    background-color: #62c9cb;
+    box-shadow: 0 0 10px #555555;
+}
+.horizontal_navbar a {
+    display: block;
+    text-decoration: none;
+    padding: 16px 32px;
+    font-size: 120%;
+    color: #000;
+}
+.horizontal_navbar i {
+    display: block;
+    padding: 16px 32px;
+    font-size: 120%;
+}
+
+.vertical_navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #d4dede;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #000;
+}
+
+li {
+    display: block;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.horizontal_navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+.footer {
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-color: #616767;
+    color: white;
+    text-align: center;
+
+}
+
+.social {
+    font-size: 24px;
+    margin-top: 20px;
+    border: #555555 10px;
+}
