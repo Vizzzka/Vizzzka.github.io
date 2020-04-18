@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style/styles.css">
+    <script src="https://kit.fontawesome.com/979b9c8650.js" crossorigin="anonymous"></script>
+    <script src="nunjucks.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="../static/style/style_video.css">
+
+    <title>HTML CSS tutorial</title>
+</head>
+<body>
+
+<div class="horizontal_navbar">
+    <div><i class="fas fa-home fa-3x"></i></div>
+    <div><a href="">Examples</a></div>
+    <div><a href="resources">Useful resources</a></div>
+    <div><a href="tips">Some tips</a></div>
+    <div><a href="author">Author</a></div>
+</div>
+
+<div>
+<ul class="vertical_navbar">
+    <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">HTML</li>
+    <li><a href="https://vizzzka.github.io/inputs_forms">Forms and input</a></li>
+    <li><a href="https://vizzzka.github.io/formating">Text format</a></li>
+    <li><a href="https://vizzzka.github.io/links">Links</a></li>
+    <li><a href="https://vizzzka.github.io/image">Image</a></li>
+    <li><a href="https://vizzzka.github.io/videohtml">Video</a></li>
+    <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">CSS</li>
+    <li><a href="https://vizzzka.github.io/grid">Grid</a></li>
+    <li><a href="https://vizzzka.github.io/flexbox">Flexbox</a></li>
+    <li><a href="https://vizzzka.github.io/box_model">Box Model</a></li>
+    <li><a href="https://vizzzka.github.io/dropdown">Dropdown</a></li>
+    <li><a href="https://vizzzka.github.io/colors">Colors</a></li>
+    <li><a href="https://vizzzka.github.io/tables">Tables</a></li>
+</ul>
+</div>
+
+<h1 style="margin-left: 15%; text-align: center; font-family: Arial, Helvetica, sans-serif;">Video in HTML</h1>
+<div class="text">
+
+    <h2>HTML Video Example. Courtesy of Big Buck Bunny.</h2>
+    <div class="video"><video width="400" controls>
+        <source src="../static/videos/mov_bbb.mp4" type="video/mp4">
+        <source src="../static/videos/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video></div>
+    <hr>
+    <div><h2>Playing Videos in HTML</h2>
+        <div class="block">
+        Before HTML5, a video could only be played in a browser with a plug-in (like flash).<br>
+        The HTML5 <xmp><video></video></xmp> element specifies a standard way to embed a video in a web page.
+        </div>
+    </div>
+    <div>
+        <hr>
+        <h2>How it Works</h2>
+        <div class="block">
+        <div class="code"><xmp>
+            <video width="320" height="240" controls>
+                <source src="../static/videos/movie.mp4" type="video/mp4">
+                <source src="../static/videos/movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </xmp></div>
+        The controls attribute adds video controls, like play, pause, and volume. <br>
+
+        It is a good idea to always include width and height attributes.
+        If height and width are not set, the page might flicker while the video loads.<br>
+
+        The <xmp><source></source></xmp> element allows you to specify alternative video files
+        which the browser may choose from. The browser will use the first recognized format.<br>
+
+        The text between the <xmp><video></xmp> and <xmp></video></xmp> tags will only be displayed in browsers that do not support the <xmp>video</xmp> element.
+        </div>
+        <hr>
+    </div>
+</div>
+
+
+</body>
+
+<div class="footer">
+    <div class="social">
+    <i class="fab fa-twitter-square fa-3x" style="margin: 20px"></i>
+    <i class="fab fa-instagram-square fa-3x" style="margin: 20px"></i>
+    <i class="fab fa-facebook-square fa-3x" style="margin: 20px"></i>
+    <div>Copyright 2020</div>
+    </div>
+</div>
+
+</html>
