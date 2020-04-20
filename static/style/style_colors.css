@@ -1,0 +1,51 @@
+h2 {
+    margin-top:40px;
+}
+.text {
+    font-size: 120%;
+    margin-left: 20%;
+}
+
+xmp {
+    display: inline;
+}
+
+.block {
+    width: 700px;
+    margin-bottom: 20px;
+    background-color: rgba(51, 170, 51, .2);
+    border-radius: 20px;
+}
+
+.table {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+}
+.textinside {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tom {
+    color: white;
+    background-color: tomato;
+    width: 600px;
+    font-size: 180%;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.toma {
+    background-color:rgba(255, 99, 71, 0.5);
+    color: white;
+    width: 600px;
+    font-size: 180%;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
