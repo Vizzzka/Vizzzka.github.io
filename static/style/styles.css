@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url('/img/fone.png');
+    background-image: url('../img/fone.png');
 }
 
 .horizontal_navbar {
