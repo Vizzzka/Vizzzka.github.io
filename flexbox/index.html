@@ -6,11 +6,11 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/style/styles.css">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
     <script src="https://kit.fontawesome.com/979b9c8650.js" crossorigin="anonymous"></script>
     <script src="nunjucks.js"></script>
     
-<link rel="stylesheet" type="text/css" href="../static/style/style_flexbox.css">
+<link rel="stylesheet" type="text/css" href="style/style_flexbox.css">
 
     <title>HTML CSS tutorial</title>
 </head>
@@ -19,31 +19,112 @@
 <div class="horizontal_navbar">
     <div><i class="fas fa-home fa-3x"></i></div>
     <div><a href="">Examples</a></div>
-    <div><a href="resources">Useful resources</a></div>
-    <div><a href="tips">Some tips</a></div>
-    <div><a href="author">Author</a></div>
+    <div><a href="">Useful resources</a></div>
+    <div><a href="">Some tips</a></div>
+    <div><a href="">Author</a></div>
 </div>
 
 <div>
 <ul class="vertical_navbar">
     <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">HTML</li>
-    <li><a href="https://vizzzka.github.io/forms_inputs/index.html">Forms and input</a></li>
-    <li><a href="https://vizzzka.github.io/formating/index.html">Text format</a></li>
-    <li><a href="https://vizzzka.github.io/links/index.html">Links</a></li>
-    <li><a href="https://vizzzka.github.io/image/index.html">Image</a></li>
-    <li><a href="https://vizzzka.github.io/videohtml/index.html">Video</a></li>
+    <li><a href="inputs_forms">Forms and input</a></li>
+    <li><a href="formating">Text format</a></li>
+    <li><a href="links">Links</a></li>
+    <li><a href="image">Image</a></li>
+    <li><a href="videohtml">Video</a></li>
     <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">CSS</li>
-    <li><a href="https://vizzzka.github.io/grid/index.html">Grid</a></li>
-    <li><a href="https://vizzzka.github.io/flexbox/index.html">Flexbox</a></li>
-    <li><a href="https://vizzzka.github.io/box_model/index.html">Box Model</a></li>
-    <li><a href="https://vizzzka.github.io/dropdown/index.html">Dropdown</a></li>
-    <li><a href="https://vizzzka.github.io/colors/index.html">Colors</a></li>
-    <li><a href="https://vizzzka.github.io/tables/index.html">Tables</a></li>
+    <li><a href="animation">Animation</a></li>
+    <li><a href="flexbox">Flexbox</a></li>
+    <li><a href="box_model">Box Model</a></li>
+    <li><a href="dropdown">Dropdown</a></li>
+    <li><a href="colors">Colors</a></li>
+    <li><a href="tables">Tables</a></li>
 </ul>
 </div>
 
-<h1>Formating text</h1>
+<h1 style="margin-left: 15%; text-align: center; font-family: Arial, Helvetica, sans-serif;">Flex box</h1>
+<div class="text">
+    <h2>Flexbox Elements</h2>
+    <div style="margin-bottom: 30px;">The Flexible Box Layout Module, makes it easier to design
+        flexible responsive layout structure without using float or positioning.
+    <br> To start using the Flexbox model, you need to first define a flex container.</div>
+    <div class="first-flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <div style="margin-bottom: 30px; margin-top: 20px"> The element above represents a flex container (the blue area) with three flex items. </div>
+    <div class="block"><xmp><div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div></xmp></div>
 
+    <h2>Flex direction property</h2>
+    <div> The row value stacks the flex items horizontally (from left to right): </div>
+    <div class="block"><xmp>.flex-container {
+        display: flex;
+        flex-direction: row;
+        }</xmp></div>
+
+
+    <h2> The justify-content Property </h2>
+    <div style="margin-bottom: 20px;">The justify-content property is used to align the flex items:</div>
+    <div class="flex-container-second">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item"> 3 </div>
+    </div>
+    <h2> The flex-grow Property </h2>
+    <div style="margin-bottom: 20px;">The flex-grow property specifies how much a
+        flex item will grow relative to the rest of the flex items. <br>
+        The value must be a number, default value is 0.
+    </div>
+    <div class="flex-container-third">
+        <div class="item" style="flex-grow: 1;"> 1 </div>
+        <div class="item" style="flex-grow: 1;"> 2 </div>
+        <div class="item" style="flex-grow: 8;"> 3 </div>
+    </div>
+
+    <h2> Responsive Image Gallery using Flexbox </h2>
+    <div class="row">
+        <div class="column">
+            <img src="/img/wedding.jpg" style="width:100%">
+            <img src="/img/rocks.jpg" style="width:100%">
+            <img src="/img/falls2.jpg" style="width:100%">
+            <img src="/img/paris.jpg" style="width:100%">
+            <img src="/img/nature.jpg" style="width:100%">
+            <img src="/img/mist.jpg" style="width:100%">
+            <img src="/img/paris.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="/img/underwater.jpg" style="width:100%">
+            <img src="/img/ocean.jpg" style="width:100%">
+            <img src="/img/wedding.jpg" style="width:100%">
+            <img src="/img/mountainskies.jpg" style="width:100%">
+            <img src="/img/rocks.jpg" style="width:100%">
+            <img src="/img/underwater.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="/img/wedding.jpg" style="width:100%">
+            <img src="/img/rocks.jpg" style="width:100%">
+            <img src="/img/falls2.jpg" style="width:100%">
+            <img src="/img/paris.jpg" style="width:100%">
+            <img src="/img/nature.jpg" style="width:100%">
+            <img src="/img/mist.jpg" style="width:100%">
+            <img src="/img/paris.jpg" style="width:100%">
+        </div>
+
+    </div>
+
+</div>
 
 
 </body>
@@ -53,7 +134,7 @@
     <i class="fab fa-twitter-square fa-3x" style="margin: 20px"></i>
     <i class="fab fa-instagram-square fa-3x" style="margin: 20px"></i>
     <i class="fab fa-facebook-square fa-3x" style="margin: 20px"></i>
-    <div>Copyright 2020</div>
+    <div>Some text</div>
     </div>
 </div>
 

@@ -6,11 +6,11 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/style/styles.css">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
     <script src="https://kit.fontawesome.com/979b9c8650.js" crossorigin="anonymous"></script>
     <script src="nunjucks.js"></script>
     
-<link rel="stylesheet" type="text/css" href="../static/style/style_color.css">
+<link rel="stylesheet" type="text/css" href="style/style_colors.css">
 
     <title>HTML CSS tutorial</title>
 </head>
@@ -19,30 +19,73 @@
 <div class="horizontal_navbar">
     <div><i class="fas fa-home fa-3x"></i></div>
     <div><a href="">Examples</a></div>
-    <div><a href="resources">Useful resources</a></div>
-    <div><a href="tips">Some tips</a></div>
-    <div><a href="author">Author</a></div>
+    <div><a href="">Useful resources</a></div>
+    <div><a href="">Some tips</a></div>
+    <div><a href="">Author</a></div>
 </div>
 
 <div>
 <ul class="vertical_navbar">
     <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">HTML</li>
-    <li><a href="https://vizzzka.github.io/forms_inputs/index.html">Forms and input</a></li>
-    <li><a href="https://vizzzka.github.io/formating/index.html">Text format</a></li>
-    <li><a href="https://vizzzka.github.io/links/index.html">Links</a></li>
-    <li><a href="https://vizzzka.github.io/image/index.html">Image</a></li>
-    <li><a href="https://vizzzka.github.io/videohtml/index.html">Video</a></li>
+    <li><a href="inputs_forms">Forms and input</a></li>
+    <li><a href="formating">Text format</a></li>
+    <li><a href="links">Links</a></li>
+    <li><a href="image">Image</a></li>
+    <li><a href="videohtml">Video</a></li>
     <li style="font-size: 120%; font-weight: bold; padding: 8px 16px;">CSS</li>
-    <li><a href="https://vizzzka.github.io/grid/index.html">Grid</a></li>
-    <li><a href="https://vizzzka.github.io/flexbox/index.html">Flexbox</a></li>
-    <li><a href="https://vizzzka.github.io/box_model/index.html">Box Model</a></li>
-    <li><a href="https://vizzzka.github.io/dropdown/index.html">Dropdown</a></li>
-    <li><a href="https://vizzzka.github.io/colors/index.html">Colors</a></li>
-    <li><a href="https://vizzzka.github.io/tables/index.html">Tables</a></li>
+    <li><a href="animation">Animation</a></li>
+    <li><a href="flexbox">Flexbox</a></li>
+    <li><a href="box_model">Box Model</a></li>
+    <li><a href="dropdown">Dropdown</a></li>
+    <li><a href="colors">Colors</a></li>
+    <li><a href="tables">Tables</a></li>
 </ul>
 </div>
 
-<h1>Formating text</h1>
+<h1 style="margin-left: 15%; text-align: center; font-family: Arial, Helvetica, sans-serif;">CSS colors</h1>
+<div class="text">
+    <h2> CSS color names</h2>
+    <div class="table">
+        <div style="background-color: tomato; width: 200px;"> <div class="textinside">Tomato</div></div>
+        <div style="background-color: orange; width: 200px;"> <div class="textinside">Orange </div></div>
+        <div style="background-color: dodgerblue; width: 200px;"> <div class="textinside">DogerBlue</div></div>
+        <div style="background-color: mediumseagreen; width: 200px;"> <div class="textinside">MediumSeaGreen</div></div>
+        <div style="background-color: gray; width: 200px;"> <div class="textinside">Gray </div></div>
+        <div style="background-color: slateblue; width: 200px;"><div class="textinside"> SlateBlue</div></div>
+        <div style="background-color: violet; width: 200px;"> <div class="textinside">Violet</div> </div>
+        <div style="background-color: lightcoral; width: 200px;"><div class="textinside"> LightCoral</div></div>
+    </div>
+    <h2>CSS Color Values</h2>
+    <div>
+        In CSS, colors can also be specified using RGB values,
+        HEX values, HSL values, RGBA values, and HSLA values: <br>
+        Same as color name "Tomato":
+    </div>
+    <div class="tom">rgb(255, 99, 71)</div>
+    <div class="tom">#ff6347</div>
+    <div class="tom">hsl(9, 100%, 64%)</div>
+    <div style="margin: 10px;">Same as color name "Tomato", but 50% transparent:</div>
+
+    <div class="toma">rgba(255, 99, 71, 0.5)</div>
+    <div class="toma">hsla(9, 100%, 64%, 0.5)</div>
+
+    <h2> CSS Text Color and Border Color</h2>
+    <div>You can set color of borders:</div>
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+    <div>You can set the color of text:</div>
+    <h1 style="color:Tomato;">Hello World</h1>
+    <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+        aliquam erat volutpat.</p>
+    <p style="color:yellow;">Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    <h2>Code</h2>
+    <div class="block"> <br> <xmp><h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p></xmp> <br></div>
+    </div>
 
 
 
@@ -53,7 +96,7 @@
     <i class="fab fa-twitter-square fa-3x" style="margin: 20px"></i>
     <i class="fab fa-instagram-square fa-3x" style="margin: 20px"></i>
     <i class="fab fa-facebook-square fa-3x" style="margin: 20px"></i>
-    <div>Copyright 2020</div>
+    <div>Some text</div>
     </div>
 </div>
 
